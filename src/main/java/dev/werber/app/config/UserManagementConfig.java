@@ -10,7 +10,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @SuppressWarnings("deprecation")
 @Configuration
-public class ProjectConfig {
+public class UserManagementConfig {
 	
 	@Bean
 	public UserDetailsService userDetailsService() {
@@ -30,4 +30,5 @@ public class ProjectConfig {
 	public PasswordEncoder passwordEncoder() {
 		return NoOpPasswordEncoder.getInstance();
 	}
+	
 }
